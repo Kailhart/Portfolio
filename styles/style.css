@@ -1,10 +1,10 @@
 :root {
   --prime-color: #44625a;
+  --secondary-color: #6a8a81;
   --light-color: #fafaf0;
   --base-font: "Raleway", sans-serif;
   --head-font: "Oswald", sans-serif;
   --dark-color: #50445f;
-  --accent-color: #d3cff2;
 }
 
 .preview .img-box {
@@ -23,21 +23,26 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    height: 60px;
-    background-color: var(--light-color);
-    padding: 10px;
-    padding-left: 50px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background-color: var(--light-color);
+  padding: 10px;
+  padding-left: 50px;
 }
 
-header a{
-    text-decoration: none;
-    margin-inline: 10px;
-    font-weight: bold;
-    color: var(--prime-color);
+header a {
+  text-decoration: none;
+  margin-inline: 10px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+header a.active,
+header a:hover {
+  color: var(--prime-color);
 }
 
 h1,
@@ -91,7 +96,7 @@ h2 {
 
 .accent-btn:hover {
   color: var(--dark-color);
-  background-color: var(--accent-color);
+  background-color: var(--light-color);
   border: 2px solid var(--dark-color);
 }
 
