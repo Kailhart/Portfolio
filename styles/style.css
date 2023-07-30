@@ -1,6 +1,5 @@
 :root {
-  --prime-color: #6a8a81;
-  --secondary-color: #44625a;
+  --prime-color: #44625a;
   --light-color: #fafaf0;
   --base-font: "Raleway", sans-serif;
   --head-font: "Oswald", sans-serif;
@@ -21,6 +20,24 @@
 body {
   background-color: var(--light-color);
   font-family: var(--base-font);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: var(--light-color);
+    padding: 10px;
+    padding-left: 50px;
+}
+
+header a{
+    text-decoration: none;
+    margin-inline: 10px;
+    font-weight: bold;
+    color: var(--prime-color);
 }
 
 h1,
@@ -91,6 +108,16 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  header {
+    padding-left: 5px;
+    justify-content: space-evenly;
+  }
+
+  header a {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
   .hero {
     height: 50vh;
   }
