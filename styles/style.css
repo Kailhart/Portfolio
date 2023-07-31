@@ -7,16 +7,6 @@
   --dark-color: #50445f;
 }
 
-.preview .img-box {
-  overflow: hidden;
-}
-
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 body {
   background-color: var(--light-color);
   font-family: var(--base-font);
@@ -31,6 +21,7 @@ header {
   background-color: var(--light-color);
   padding: 10px;
   padding-left: 50px;
+  z-index: 2;
 }
 
 header a {
@@ -57,6 +48,8 @@ h2 {
   font-size: 40px;
   margin: 15px;
 }
+
+/* HOMEPAGE */
 
 .hero {
   background-color: var(--prime-color);
@@ -85,6 +78,16 @@ h2 {
   margin: 0 auto;
 }
 
+.preview .img-box {
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .accent-btn {
   display: block;
   width: fit-content;
@@ -100,6 +103,55 @@ h2 {
   border: 2px solid var(--dark-color);
 }
 
+/* PROJECTS */
+
+.project-section a {
+  text-decoration: none;
+}
+
+.project-card {
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+  overflow: hidden;
+  padding: 0;
+  aspect-ratio: 3/2;
+  border: 2px solid var(--secondary-color);
+}
+
+.project-card img {
+  grid-area: stack;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all 500ms ease-in-out;
+}
+
+.card-text {
+  grid-area: stack;
+  background-color: #6a8a81d7;
+  transform: translateY(73%);
+  transition: transform 700ms ease-in-out;
+}
+
+.card-text :is(h3, p) {
+  color: var(--light-color);
+}
+
+.project-card:hover img {
+  opacity: 0.8;
+  filter: blur(10px);
+}
+
+.project-card:hover .card-text {
+  transform: none;
+  z-index: 1;
+}
+
+/* MEDIA */
+
 @media (max-width: 992px) {
   .hero {
     height: 40vh;
@@ -109,6 +161,14 @@ h2 {
   }
   .hero h3 {
     font-size: 30px;
+  }
+
+  .project-section {
+    margin-top: 1rem !important;
+  }
+
+  .card-text {
+    transform: translateY(85%);
   }
 }
 
@@ -143,5 +203,17 @@ h2 {
 
   .preview-element {
     padding: 0;
+  }
+
+  .card-text {
+    transform: translateY(73%);
+  }
+
+  .card-text h3 {
+    font-size: 25px;
+  }
+
+  .card-text p {
+    font-size: 15px;
   }
 }
