@@ -22,6 +22,7 @@ header {
   padding: 10px;
   padding-left: 50px;
   z-index: 2;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 header a {
@@ -152,6 +153,11 @@ h2 {
 
 /* ABOUT */
 
+.about-section {
+  margin-left: 0;
+  padding-right: 0;
+}
+
 .summary {
   background-color: var(--prime-color);
   color: var(--light-color);
@@ -223,6 +229,10 @@ h2 {
 
   .card-text {
     transform: translateY(85%);
+  }
+
+  .summary ul {
+    padding-left: 15px;
   }
 }
 
