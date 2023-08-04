@@ -75,7 +75,7 @@ footer .mail-me {
 
 footer :is(h3, p) {
   color: var(--light-color);
-  font-size: 32px;
+  font-size: 25px;
   line-height: 40px;
 }
 
@@ -354,7 +354,7 @@ footer .open-sourced a {
 }
 
 @media (max-width: 768px) {
-  header ul{
+  header ul {
     padding-left: 5px;
     justify-content: space-evenly;
   }
@@ -417,7 +417,8 @@ footer .open-sourced a {
     font-size: 40px;
   }
 
-  .summary :is(p, li), .my-story p{
+  .summary :is(p, li),
+  .my-story p {
     font-size: 18px;
   }
 
