@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Here you can check all latest projects made by Kateryna Peresta."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,10 +33,16 @@
   </head>
   <body>
     <header>
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a class="active" href="/work.html">Projects</a>
-      <a href="/contacts.html">Contact</a>
+      <ul>
+        <li><a href="/" title="Homepage">Home</a></li>
+        <li><a href="/about.html" title="About Kateryna">About</a></li>
+        <li>
+          <a class="active" href="/work.html" title="Kateryna's projects"
+            >Projects</a
+          >
+        </li>
+        <li><a href="/contacts.html" title="Contact Kateryna">Contact</a></li>
+      </ul>
     </header>
     <div class="container">
       <h1 class="text-center">Some of my latest projects</h1>
@@ -101,27 +111,43 @@
         <div
           class="col-md-auto row justify-content-center align-items-baseline"
         >
-          <p class="col-auto mx-0 my-1 p-0">peresta.kateryna.gmail.com</p>
+          <p class="col-auto mx-0 my-1">peresta.kateryna.gmail.com</p>
           <a
             href="mailto:peresta.kateryna@gmail.com"
-            class="btn mx-3 my-1 col-auto"
+            class="btn my-1 col-auto mail-btn"
+            title="Send E-Mail"
             ><i class="fa-solid fa-envelope"></i
           ></a>
         </div>
       </div>
       <div class="contact-icons d-flex justify-content-center">
-        <a class="mx-3 btn" target="_blank" href="https://github.com/Kailhart"
+        <a
+          class="mx-3 btn"
+          target="_blank"
+          href="https://github.com/Kailhart"
+          title="GitHub profile"
           ><i class="fa-brands fa-github"></i
         ></a>
-        <a class="mx-3 btn" target="_blank" href="https://www.linkedin.com"
+        <a
+          class="mx-3 btn"
+          target="_blank"
+          href="https://www.linkedin.com"
+          title="LinkedIn profile"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
         <a
           class="mx-3 btn"
           target="_blank"
           href="https://www.instagram.com/kailhart"
+          title="Instagram profile"
           ><i class="fa-brands fa-instagram"></i
         ></a>
+      </div>
+      <div class="open-sourced mt-3">
+        <p>
+          This project was coded by Kateryna Peresta and it's
+          <a href="https://github.com/Kailhart/Portfolio">open-sourced</a>
+        </p>
       </div>
     </footer>
   </body>
